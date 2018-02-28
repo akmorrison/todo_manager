@@ -49,7 +49,7 @@ def get_time_to_due_pretty(d):
     elif delta.days > 7:
         return "next week %s" % due_weekday
     elif delta.days > 2:
-        return "due on TODOTODO"
+        return "due some time this week %s" % due_weekday
     elif delta.days > 1:
         return "due tomorrow %s" % due_time
     elif delta.days == 0:
